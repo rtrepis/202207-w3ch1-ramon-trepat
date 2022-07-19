@@ -1,3 +1,4 @@
+import Button from "./components/Buttons/buttons.js";
 import Components from "./components/Components.js";
 import Comunications_picture from "./components/Comunications/Picture.js";
 import Comunications_text from "./components/Comunications/Text.js";
@@ -11,6 +12,18 @@ const characterActions = new Components(
   app.element,
   "character__actions",
   "div"
+);
+
+const buttonHabla = new Button(
+  characterActions.element,
+  "character__action btn",
+  "habla"
+);
+
+const buttonMuere = new Button(
+  characterActions.element,
+  "character__action btn",
+  "muere"
 );
 
 const comunications = new Components(document.body, "comunications", "div");
