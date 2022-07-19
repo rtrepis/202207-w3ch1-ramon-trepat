@@ -1,4 +1,4 @@
-import Component from "../Component.js";
+import Component from "../../Component.js";
 
 class StateIcon extends Component {
   constructor(parent, clasName) {
