@@ -1,6 +1,6 @@
 import Components from "./components/Components.js";
-import Picture from "./components/Comunications/Picture.js";
-import Text from "./components/Comunications/Text.js";
+import Comunications_picture from "./components/Comunications/Picture.js";
+import Comunications_text from "./components/Comunications/Text.js";
 import personajes from "./utility/personajes.js";
 
 console.log(personajes);
