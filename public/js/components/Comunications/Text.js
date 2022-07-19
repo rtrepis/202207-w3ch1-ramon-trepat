@@ -1,6 +1,6 @@
-import Components from "../Components.js";
+import Component from "../Component.js";
 
-class Comunications_text extends Components {
+class Comunications_text extends Component {
   constructor(parent, className, frase) {
     super(parent, className, "p");
 

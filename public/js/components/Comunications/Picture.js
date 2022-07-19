@@ -1,6 +1,6 @@
-import Components from "../Components.js";
+import Component from "../Component.js";
 
-class Comunications_picture extends Components {
+class Picture extends Component {
   src;
   alt;
 
@@ -17,4 +17,4 @@ class Comunications_picture extends Components {
   }
 }
 
-export default Comunications_picture;
+export default Picture;

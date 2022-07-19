@@ -1,4 +1,4 @@
-class Components {
+class Component {
   element;
   constructor(parent, className, tag) {
     this.element = document.createElement(tag);
@@ -9,4 +9,4 @@ class Components {
   }
 }
 
-export default Components;
+export default Component;
