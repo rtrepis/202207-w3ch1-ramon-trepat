@@ -1,6 +1,6 @@
 import Components from "../Components.js";
 
-class Comunications extends Components {
+class Comunications_text extends Components {
   constructor(parent, className, frase) {
     super(parent, className, "p");
 
@@ -8,4 +8,4 @@ class Comunications extends Components {
   }
 }
 
-export default Comunications;
+export default Comunications_text;
