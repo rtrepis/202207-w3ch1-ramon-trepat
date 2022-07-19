@@ -3,9 +3,15 @@ import Comunications_picture from "./components/Comunications/Picture.js";
 import Comunications_text from "./components/Comunications/Text.js";
 import personajes from "./utility/personajes.js";
 
-console.log(personajes);
+//console.log(personajes);
 
 const app = new Components(document.body, "app container", "div");
+
+const characterActions = new Components(
+  app.element,
+  "character__actions",
+  "div"
+);
 
 const comunications = new Components(document.body, "comunications", "div");
 
@@ -23,4 +29,4 @@ personajes.forEach((personaje) => {
   );
 });
 
-console.log(comunications.element);
+//console.log(comunications.element);

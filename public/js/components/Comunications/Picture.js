@@ -1,11 +1,19 @@
 import Components from "../Components.js";
 
 class Comunications_picture extends Components {
+  src;
+  alt;
+
   constructor(parent, className, name, family) {
     super(parent, className, "img");
 
-    this.element.src = `img/${name}.jpg`;
-    this.element.alt = `${name} ${family}`;
+    this.src = `img/${name}.jpg`;
+    this.alt = `${name} ${family}`;
+    this.render();
+  }
+  render() {
+    this.element.src = this.src;
+    this.element.alt = this.alt;
   }
 }
 
