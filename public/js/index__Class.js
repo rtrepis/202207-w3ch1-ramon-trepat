@@ -1,10 +1,11 @@
 import Personaje from "./Classes/Personajes.js";
 import Button from "./components/Buttons/buttons.js";
+import CharacterCard from "./components/CaracterCard/CharacterCard.js";
 import CardTitle from "./components/Card-Body/Card__Title.js";
 import ListInfo from "./components/Card-Body/List__Info.js";
 import StateIcon from "./components/Card-Body/State__Icon.js";
 import Component from "./components/Component.js";
-import Picture from "./components/Comunications/Picture.js";
+import Picture from "./components/Picture.js";
 import Comunications_text from "./components/Comunications/Text.js";
 import personajes from "./utility/personajes.js";
 
@@ -20,6 +21,13 @@ const chartersList = new Component(
 
 const charterCol = new Component(chartersList.element, "character col", "il");
 
+const characterCard = new CharacterCard(
+  charterCol.element,
+  personajes[0].nombre,
+  personajes[0].familia
+);
+
+/*
 const characterCard = new Component(
   charterCol.element,
   "card character__card",
@@ -35,7 +43,13 @@ const pictureCard = new Picture(
 
 const cardBody = new Component(characterCard.element, "card-body;", "div");
 
+
+
+
 const emoji = new Component(characterCard.element, "emoji", "i");
+
+
+*/
 
 const cardTitle = new CardTitle(
   cardBody.element,
